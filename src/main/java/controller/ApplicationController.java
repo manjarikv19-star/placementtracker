@@ -42,6 +42,9 @@ public class ApplicationController {
 
     @DeleteMapping("/{id}")
     public String deleteApplication(@PathVariable Long id) {
+        if (!repository.existsById(id)) {
+            throw new RuntimeException("Application not found");
+        }
         repository.deleteById(id);
         return "Application deleted successfully";
     }

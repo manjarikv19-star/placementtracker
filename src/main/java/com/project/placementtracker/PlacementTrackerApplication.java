@@ -4,10 +4,9 @@ import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 @SpringBootApplication
-public class PlacementtrackerApplication {
+public class PlacementTrackerApplication {
 
     public static void main(String[] args) {
-        SpringApplication.run(PlacementtrackerApplication.class, args);
+        SpringApplication.run(PlacementTrackerApplication.class, args);
     }
-
 }
